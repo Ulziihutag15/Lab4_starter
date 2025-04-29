@@ -32,7 +32,7 @@ function sumValues(num1, num2, add) {
 function discountPrices(prices, discount) {
     const discounted = []
     const length = prices.length;
-    if(length == 0 || typeof discount == 'number'){
+    if(length == 0 || typeof discount != 'number'){
         return false;
     }
     let discountedPrice = 0
