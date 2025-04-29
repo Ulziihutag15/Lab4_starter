@@ -31,6 +31,9 @@ function sumValues(num1, num2, add) {
  */
 function discountPrices(prices, discount) {
     const discounted = []
+    if(Array.isArray(prices) == false){
+        return false;
+    }
     const length = prices.length;
     if(length == 0 || typeof discount != 'number'){
         return false;
